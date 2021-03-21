@@ -5,12 +5,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/',function(req,res){
+/*app.get('/',function(req,res){
     //res.send('Hello world!');
     res.json({id:"kusa"});
-});
+});*/
 
-app.get('/api/get', function (req,res) {
+app.get('/', function (req,res) {
     res.send('Hello');
  });
 
