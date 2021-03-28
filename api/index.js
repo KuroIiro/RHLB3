@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
     res.json({id:"kusa"});
 });*/
 
+/*
 app.get('/', function (req,res) {
     res.send('Hello');
  });
@@ -17,7 +18,7 @@ app.get('/', function (req,res) {
  app.post('/api/post', function (req,res) {
     res.send('Heo');
     console.log(req.body);
- });
+ });*/
 
  app.post('/',function(req,res)){
     const data = req.body;
