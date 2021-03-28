@@ -19,7 +19,16 @@ app.get('/', function (req,res) {
     console.log(req.body);
  });
 
+ app.post('/',function(req,res)){
+    const data = req.body;
+    console.log('req.body',data);
+    res.send('api:OK')
+ });
+
 /*app.listen(3000,function(){
 
 });*/
+
+
+
 (process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
