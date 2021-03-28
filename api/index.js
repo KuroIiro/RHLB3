@@ -21,7 +21,7 @@ app.get('/', function (req,res) {
  });*/
 
  app.post('/',function(req,res){
-    const data = req.body;
+    const data = req.body['events'][0]['message']['id'];
     console.log('req.body',data);
     res.send('api:OK')
  });
