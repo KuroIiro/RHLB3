@@ -25,7 +25,7 @@ app.get('/', function (req,res) {
     //console.log('req.body',data);
 
     const messageId = req.body['events'][0]['message']['id'];
-    console.log(messageId);
+    console.log('messageId');
 
     res.send('api:OK')
 
