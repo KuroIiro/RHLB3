@@ -21,9 +21,14 @@ app.get('/', function (req,res) {
  });*/
 
  app.post('/',function(req,res){
-    const data = req.body['events'][0]['message']['id'];
+    const data = req.body;
     console.log('req.body',data);
+
+    const messageId = req.body['events'][0]['message']['id'];
+    console.log(messageId);
+
     res.send('api:OK')
+
  });
 
 /*app.listen(3000,function(){
